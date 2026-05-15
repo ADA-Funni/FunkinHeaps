@@ -28,8 +28,8 @@ class MGDObject extends Bitmap {
 	override function sync(ctx:RenderContext) {
 		final cam:Camera = camera ?? getScene().camera;
 
-		final tx:Float = (1 - scroll.x) * cam.x;
-		final ty:Float = (1 - scroll.y) * cam.y;
+		final tx:Float = ((1 - scroll.x) * cam.x) * cam.scaleX;
+		final ty:Float = ((1 - scroll.y) * cam.y) * cam.scaleY;
 
 		if (tx != x || ty != y)
 			updatePos(tx, ty);
