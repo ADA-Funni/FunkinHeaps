@@ -10,4 +10,4 @@
 
 -D hl-ver=1.15.0
 
--hl Main.hl
+-hl bin/Main.hl

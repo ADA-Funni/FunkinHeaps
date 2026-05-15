@@ -11,16 +11,6 @@
 				"file": "heaps-hl.hxml"
             }
         },
-		{
-            "name": "HashLink (C)",
-            "request": "launch",
-            "type": "hl",
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": {
-				"type" : "hxml",
-				"file": "heaps-hlc.hxml"
-            }
-        },
         {
 			"type": "chrome",
 			"request": "launch",
