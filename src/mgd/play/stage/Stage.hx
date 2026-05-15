@@ -25,8 +25,9 @@ class Stage extends Object {
             var node_scale:Array<Float> = commaFloatsFromString(node.att.scale);
             var node_scroll:Array<Float> = commaFloatsFromString(node.att.scroll);
 
-            bmp.x = node_position[0];
-            bmp.y = node_position[1];
+            bmp.position.x = node_position[0];
+            bmp.position.y = node_position[1];
+            bmp.updatePos();
 
             bmp.scaleX = node_scale[0];
             bmp.scaleY = node_scale[1];

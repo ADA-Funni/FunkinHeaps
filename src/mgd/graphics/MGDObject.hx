@@ -8,12 +8,17 @@ import h2d.Object;
 import h2d.Bitmap;
 
 class MGDObject extends Bitmap {
+	public var position = new Point(0, 0);
 	public var scroll = new Point(1, 1);
 
 	public var camera:Null<Camera>;
 
 	public function new(tile:Tile, ?parent:Object) {
 		super(tile, parent);
+	}
+
+	public function updatePos(offsetX:Float = 0, offsetY:Float = 0) {
+		setPosition(position.x + offsetX, position.y + offsetY);
 	}
 
 	override function sync(ctx:RenderContext) {
@@ -23,7 +28,7 @@ class MGDObject extends Bitmap {
 		final ty:Float = (1 - scroll.y) * cam.y;
 
 		if (tx != x || ty != y)
-			setPosition(tx, ty);
+			updatePos(tx, ty);
 
 		super.sync(ctx);
 	}
