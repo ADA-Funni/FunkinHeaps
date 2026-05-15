@@ -9,5 +9,6 @@
 	<dad />
 	<boyfriend />
 
+	<!-- blend refers to h2d.BlendMode's field names directly, through enum magic! -->
 	<sprite id="overlay" image="yeitOverlay" position="0, 0" scale="1, 1" scroll="0.9, 0.9" blend="AlphaMultiply" alpha="1.25" />
 </stage>
