@@ -5,20 +5,6 @@ import hxd.Res;
 import mgd.play.stage.Stage;
 import hxd.App;
 
-class Point {
-    public var x:Float;
-    public var y:Float;
-
-    inline public function new(x:Float = 0, y:Float = 0) {
-        set(x, y);
-    }
-
-    public function set(x:Float = 0, y:Float = 0) {
-        this.x = x;
-        this.y = y;
-    }
-}
-
 class Main extends App {
     public var stage:Stage;
     override function init() {
