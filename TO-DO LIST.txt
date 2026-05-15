@@ -1,0 +1,1 @@
+Get scroll factors working on stage sprites []

@@ -1,0 +1,9 @@
+-cp src
+-main Main
+
+-lib heaps
+
+-D resourcesPath=res
+-D windowSize=1280x720
+
+-js Main.js

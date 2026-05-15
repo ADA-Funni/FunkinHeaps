@@ -1,0 +1,7 @@
+.haxelib/
+bin/
+Main.hl
+Main.js
+
+dump/
+*.DS_Store
