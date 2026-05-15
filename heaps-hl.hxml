@@ -5,6 +5,8 @@
 -lib hlsdl
 -lib hlopenal
 
+libraries.hxml
+
 -D resourcesPath=res
 -D windowSize=1280x720
 

@@ -1,5 +1,6 @@
 package mgd.play.stage;
 
+import mgd.script.MGDScript;
 import mgd.graphics.MGDObject;
 import h2d.Scene;
 import hxd.Res;
@@ -11,6 +12,7 @@ using StringTools;
 class Stage extends Object {
     private static final STAGE_RES_PATH:String = 'gameplay/stages';
 
+    public var scripts:Array<MGDScript> = [];
     public var props:Map<String, MGDObject> = [];
     
     public function new(?s2d:Scene, stageId:String = "yeitsLovelyLittleHouse") {
@@ -39,10 +41,22 @@ class Stage extends Object {
 
             props[node.att.id] = bmp;
         }
+
+        var hscript = new mgd.script.HScript();
+        
+        hscript.load(Res.load('$STAGE_RES_PATH/$stageId/script.hxs').toText());
+        hscript.execute();
+        hscript.set('props', props);
+
+        scripts.push(hscript);
+        
+        for (script in scripts)
+            script.call('onCreate');
     }
 
     public function update(dt:Float) {
-        
+        for (script in scripts)
+            script.call('onUpdate', [dt]);
     }
 
     static function commaFloatsFromString(str:String):Array<Float> {

@@ -1,0 +1,10 @@
+function onCreate() {
+    
+}
+
+function onUpdate(elapsed:Float) {
+    if (!props.exists('spiral')) return;
+
+    props.get('spiral').rotation += 0.025;
+    if (props.get('spiral').rotation == 359) props['spiral'].rotation = 0;
+}

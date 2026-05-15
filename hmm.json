@@ -1,36 +1,18 @@
 {
   "dependencies": [
     {
-      "name": "hashlink",
-      "type": "git",
-      "dir": null,
-      "ref": "master",
-      "url": "https://github.com/HaxeFoundation/hashlink.git"
-    },
-    {
-      "name": "hldx",
-      "type": "dev",
-      "dir": null,
-      "path": ".haxelib/hashlink/git/libs/directx"
-    },
-    {
-      "name": "hlopenal",
-      "type": "dev",
-      "dir": null,
-      "path": ".haxelib/hashlink/git/libs/openal"
-    },
-    {
-      "name": "hlsdl",
-      "type": "dev",
-      "dir": null,
-      "path": ".haxelib/hashlink/git/libs/sdl"
-    },
-    {
       "name": "format",
       "type": "git",
       "dir": null,
       "ref": "master",
       "url": "https://github.com/HaxeFoundation/format.git"
+    },
+    {
+      "name": "hashlink",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/HaxeFoundation/hashlink.git"
     },
     {
       "name": "haxeui-core",
@@ -52,6 +34,31 @@
       "dir": null,
       "ref": "master",
       "url": "https://github.com/HeapsIO/heaps.git"
+    },
+    {
+      "name": "hldx",
+      "type": "dev",
+      "dir": null,
+      "path": ".haxelib/hashlink/git/libs/directx"
+    },
+    {
+      "name": "hlopenal",
+      "type": "dev",
+      "dir": null,
+      "path": ".haxelib/hashlink/git/libs/openal"
+    },
+    {
+      "name": "hlsdl",
+      "type": "dev",
+      "dir": null,
+      "path": ".haxelib/hashlink/git/libs/sdl"
+    },
+    {
+      "name": "hscript-insanity",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/inky03/hscript-insanity"
     }
   ]
 }

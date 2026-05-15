@@ -10,15 +10,21 @@ import h2d.Bitmap;
 class MGDObject extends Bitmap {
 	public var position = new Point(0, 0);
 	public var scroll = new Point(1, 1);
+	public var centerOffset = new Point(0, 0);
 
 	public var camera:Null<Camera>;
 
 	public function new(tile:Tile, ?parent:Object) {
 		super(tile, parent);
+
+		tile.dx -= tile.width * 0.5;
+		tile.dy -= tile.height * 0.5;
+
+		centerOffset.set(tile.width * 0.5, tile.height * 0.5);
 	}
 
 	public function updatePos(offsetX:Float = 0, offsetY:Float = 0) {
-		setPosition(position.x + offsetX, position.y + offsetY);
+		setPosition(position.x + offsetX + centerOffset.x, position.y + offsetY + centerOffset.y);
 	}
 
 	/**
