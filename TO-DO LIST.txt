@@ -1,1 +1,2 @@
-Get scroll factors working on stage sprites []
+Get scroll factors working on stage sprites [X]
+Add recyclable Points []
