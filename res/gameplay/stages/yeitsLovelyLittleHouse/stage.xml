@@ -1,8 +1,8 @@
 <!DOCTYPE mgd-stage>
 <stage zoom="0.9" displayName="Yeit's Lovely Little House">
-	<sprite id="sky" image="yeitSky" position="0, 0" scale="1, 1" scroll="0.9, 0.9" />
-	<sprite id="walls" image="yeitWalls" position="0, 0" scale="1, 1" scroll="0.9, 0.9" />
-	<sprite id="spiral" image="yeitSpiral" position="0, 0" scale="1, 1" scroll="0.9, 0.9" />
+	<sprite id="sky" image="yeitSky" position="0, 0" scale="1, 1" scroll="0.4, 0.4" />
+	<sprite id="walls" image="yeitWalls" position="0, 0" scale="1, 1" scroll="0.6, 0.6" />
+	<sprite id="spiral" image="yeitSpiral" position="0, 0" scale="1, 1" scroll="0.7, 0.7" />
 	<sprite id="ground" image="yeitGround" position="0, 0" scale="1, 1" scroll="0.9, 0.9" />
 
 	<girlfriend scroll="0.95, 0.95" />
@@ -10,5 +10,5 @@
 	<boyfriend />
 
 	<!-- blend refers to h2d.BlendMode's field names directly, through enum magic! -->
-	<sprite id="overlay" image="yeitOverlay" position="0, 0" scale="1, 1" scroll="0.9, 0.9" blend="AlphaMultiply" alpha="1.25" />
+	<sprite id="overlay" image="yeitOverlay" position="0, 0" scale="1, 1" scroll="1.1, 1.1" blend="AlphaMultiply" alpha="1.25" />
 </stage>
