@@ -21,6 +21,10 @@ class MGDObject extends Bitmap {
 		setPosition(position.x + offsetX, position.y + offsetY);
 	}
 
+	/**
+	 * Thanks to PurSnake for the base I used for this function!
+	 * @see https://x.com/PurSnake
+	 */
 	override function sync(ctx:RenderContext) {
 		final cam:Camera = camera ?? getScene().camera;
 
